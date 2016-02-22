@@ -1,7 +1,5 @@
 
-import {
-    ZapClass,
-} from 'zap-base-js-class';
+import ZapClass from 'zap-base-js-class';
 
 describe('zap-base-js-class', () => {
     class Animal extends ZapClass {

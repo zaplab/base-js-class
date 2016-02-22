@@ -1,6 +1,6 @@
 {
   "name": "zap-base-js-class",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "Sebastian Herber",
     "email": "hi@zaplab.at",
@@ -27,7 +27,7 @@
     "eslint-config-airbnb": "^2.0.0",
     "eslint-plugin-react": "^3.11.3",
     "event-stream": "^3.3.2",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-babel": "^6.1.1",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^1.1.1",
@@ -46,7 +46,6 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "./node_modules/.bin/gulp setup",
     "test": "./node_modules/karma/bin/karma start karma.config.js"
   }
 }
