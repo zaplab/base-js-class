@@ -1,8 +1,8 @@
 
-var path = require('path');
-var webpack = require('webpack');
+import path from 'path';
+import webpack from 'webpack';
 
-module.exports = {
+export default {
     module: {
         loaders: [
             {
@@ -34,16 +34,16 @@ module.exports = {
             'zap-base-js-class': 'src/index.js',
         },
         modulesDirectories: [
-            'src',
             'node_modules',
+            'src',
         ],
     },
 
     resolveLoader: {
         root: __dirname,
         modulesDirectories: [
-            'src',
             'node_modules',
+            'src',
         ],
     },
 };

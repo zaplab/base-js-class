@@ -15,7 +15,7 @@ module.exports = function (config) {
             'tests/libs/jasmine-matchers.js',
             'tests/spec/*.js',
             {
-                pattern: 'src/js/**/*.js',
+                pattern: 'src/**/*.js',
                 watched: true,
                 included: false,
                 served: false,
@@ -34,14 +34,16 @@ module.exports = function (config) {
         ],
 
         preprocessors: {
-            'tests/spec/*.js': ['webpack'],
+            'tests/spec/*.js': [
+                'webpack',
+            ],
         },
 
         reporters: [
             'spec',
         ],
 
-        webpack: require('./webpack-karma.config.js'),
+        webpack: require('./webpack.config.js'),
 
         webpackMiddleware: {
             stats: {
