@@ -7,7 +7,6 @@ var _createClass = (function () { function defineProperties(target, props) { for
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.ZapClass = undefined;
 
 var _zapBaseJsObject = require('zap-base-js-object');
 
@@ -21,22 +20,20 @@ var removeOn = function removeOn(string) {
     });
 };
 
-var ZapClass = exports.ZapClass = (function () {
+var _class = (function () {
 
     /**
-     * @access public
      * @param {Object} [options]
-     * @returns {ZapClass}
      */
 
     /**
      * @type {Object}
      */
 
-    function ZapClass() {
+    function _class() {
         var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-        _classCallCheck(this, ZapClass);
+        _classCallCheck(this, _class);
 
         this.options = {};
         this.$events = {};
@@ -58,7 +55,7 @@ var ZapClass = exports.ZapClass = (function () {
      * @type {Object}
      */
 
-    _createClass(ZapClass, [{
+    _createClass(_class, [{
         key: 'setOptions',
         value: function setOptions(options) {
             this.options = _extends({}, this.constructor.defaultOptions, options);
@@ -201,7 +198,9 @@ var ZapClass = exports.ZapClass = (function () {
         }
     }]);
 
-    return ZapClass;
+    return _class;
 })();
 
-ZapClass.defaultOptions = {};
+_class.defaultOptions = {};
+exports.default = _class;
+module.exports = exports['default'];

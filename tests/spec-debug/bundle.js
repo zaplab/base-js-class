@@ -52,6 +52,10 @@
 
 	var _zapBaseJsClass = __webpack_require__(1);
 
+	var _zapBaseJsClass2 = _interopRequireDefault(_zapBaseJsClass);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -81,7 +85,7 @@
 	        }]);
 
 	        return Animal;
-	    })(_zapBaseJsClass.ZapClass);
+	    })(_zapBaseJsClass2.default);
 
 	    Animal.defaultOptions = {
 	        eyes: 2
@@ -93,7 +97,7 @@
 
 	    describe('zap-base-js-class should export the following', function () {
 	        it('ZapClass', function () {
-	            expect(_zapBaseJsClass.ZapClass).toEqual(jasmine.any(Function));
+	            expect(_zapBaseJsClass2.default).toEqual(jasmine.any(Function));
 	        });
 	    });
 
@@ -122,7 +126,7 @@
 	            }]);
 
 	            return AnimalWithEvent;
-	        })(_zapBaseJsClass.ZapClass);
+	        })(_zapBaseJsClass2.default);
 
 	        var ContaminatedFish = (function (_Animal) {
 	            _inherits(ContaminatedFish, _Animal);
@@ -264,7 +268,7 @@
 	                }]);
 
 	                return AnimalWithEvent2;
-	            })(_zapBaseJsClass.ZapClass);
+	            })(_zapBaseJsClass2.default);
 
 	            AnimalWithEvent2.defaultOptions = {
 	                eyes: 2
@@ -642,7 +646,7 @@
 	                }]);
 
 	                return InitTest;
-	            })(_zapBaseJsClass.ZapClass);
+	            })(_zapBaseJsClass2.default);
 
 	            InitTest.defaultOptions = {
 	                eyes: 4
@@ -678,7 +682,7 @@
 	                }]);
 
 	                return InitTest;
-	            })(_zapBaseJsClass.ZapClass);
+	            })(_zapBaseJsClass2.default);
 
 	            InitTest.defaultOptions = {
 	                eyes: 4
@@ -726,7 +730,7 @@
 	                }]);
 
 	                return InitTest;
-	            })(_zapBaseJsClass.ZapClass);
+	            })(_zapBaseJsClass2.default);
 
 	            InitTest.defaultOptions = {
 	                eyes: 4
@@ -876,7 +880,6 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.ZapClass = undefined;
 
 	var _zapBaseJsObject = __webpack_require__(2);
 
@@ -890,22 +893,20 @@
 	    });
 	};
 
-	var ZapClass = exports.ZapClass = (function () {
+	var _class = (function () {
 
 	    /**
-	     * @access public
 	     * @param {Object} [options]
-	     * @returns {ZapClass}
 	     */
 
 	    /**
 	     * @type {Object}
 	     */
 
-	    function ZapClass() {
+	    function _class() {
 	        var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-	        _classCallCheck(this, ZapClass);
+	        _classCallCheck(this, _class);
 
 	        this.options = {};
 	        this.$events = {};
@@ -927,7 +928,7 @@
 	     * @type {Object}
 	     */
 
-	    _createClass(ZapClass, [{
+	    _createClass(_class, [{
 	        key: 'setOptions',
 	        value: function setOptions(options) {
 	            this.options = _extends({}, this.constructor.defaultOptions, options);
@@ -1070,10 +1071,12 @@
 	        }
 	    }]);
 
-	    return ZapClass;
+	    return _class;
 	})();
 
-	ZapClass.defaultOptions = {};
+	_class.defaultOptions = {};
+	exports.default = _class;
+	module.exports = exports['default'];
 
 /***/ },
 /* 2 */

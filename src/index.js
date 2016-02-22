@@ -9,7 +9,7 @@ const removeOn = function removeOn(string) {
     });
 };
 
-export class ZapClass {
+export default class {
     /**
      * @type {Object}
      */
@@ -26,9 +26,7 @@ export class ZapClass {
     $events = {};
 
     /**
-     * @access public
      * @param {Object} [options]
-     * @returns {ZapClass}
      */
     constructor(options = {}) {
         this.setOptions(options);
