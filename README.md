@@ -11,9 +11,7 @@ $ npm install zap-base-js-class
 
 ## Usage
 ```js
-import {
-    ZapClass,
-} from 'zap-base-js-class';
+import ZapClass from 'zap-base-js-class';
 
 class Animal extends ZapClass {
     static defaultOptions = {
