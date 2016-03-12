@@ -11,7 +11,7 @@
     "url": "https://github.com/zaplab/base-js-class.git"
   },
   "dependencies": {
-    "zap-base-js-object": "0.0.2"
+    "zap-base-js-object": "^1.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
