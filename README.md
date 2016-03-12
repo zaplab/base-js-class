@@ -1,4 +1,4 @@
-# zap-base-js-class
+# zap-base-js-class [![Build Status](https://travis-ci.org/zaplab/base-js-class.svg?branch=master)](https://travis-ci.org/zaplab/base-js-class)
 
 just translating (and testing) some old code to ES7,
 nothing to see here ;-)

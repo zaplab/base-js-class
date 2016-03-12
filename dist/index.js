@@ -1,12 +1,12 @@
 'use strict';
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _zapBaseJsObject = require('zap-base-js-object');
 
@@ -20,11 +20,12 @@ var removeOn = function removeOn(string) {
     });
 };
 
-var _class = (function () {
+var _class = function () {
 
     /**
      * @param {Object} [options]
      */
+
 
     /**
      * @type {Object}
@@ -47,6 +48,7 @@ var _class = (function () {
      * @returns void
      */
 
+
     /**
      * @type {Object}
      */
@@ -54,6 +56,7 @@ var _class = (function () {
     /**
      * @type {Object}
      */
+
 
     _createClass(_class, [{
         key: 'setOptions',
@@ -178,9 +181,9 @@ var _class = (function () {
                     }
                 }
             } else {
-                for (var type in events) {
-                    if (events.hasOwnProperty(type)) {
-                        this.removeEvent(type, events[type]);
+                for (var _type in events) {
+                    if (events.hasOwnProperty(_type)) {
+                        this.removeEvent(_type, events[_type]);
                     }
                 }
             }
@@ -199,7 +202,7 @@ var _class = (function () {
     }]);
 
     return _class;
-})();
+}();
 
 _class.defaultOptions = {};
 exports.default = _class;
